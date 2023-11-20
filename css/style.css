@@ -149,10 +149,11 @@ li.rest{
 	justify-content: space-between;
 	align-content: space-between;
 }
-.card {
+.card . {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-}
+  }
 .visually-hidden {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: polygon(0px 0px, 0px 0px, 0px 0px);

@@ -138,10 +138,11 @@ li.rest p{
 
 .card{
 	height: 251px;
-	align-self: stretch;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	align-items: flex-end;
+
 }
 .card a{
 	display: flex;

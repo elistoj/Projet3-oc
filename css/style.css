@@ -147,6 +147,9 @@ li.rest p{
 	flex-direction: column;
 	flex-wrap: wrap;
 }
+.card-content p{
+	display: inline;
+}
 .card img {
 	height: 231px;
 

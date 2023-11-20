@@ -129,11 +129,12 @@ li.rest{
 li.rest p{
 
 }
-#restaurants-cards{
+.restaurants-cards{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
+
 .card{
 	height: 251px;
 	align-self: stretch;

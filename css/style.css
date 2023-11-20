@@ -136,7 +136,7 @@ li.rest p{
 	gap: 16px;
 }
 
-.card{
+.restaurants-cards card{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;

@@ -58,6 +58,9 @@
 	--white: #FFF;
 	--Grey: #353535;
 }
+main {
+	display: block;
+}
 .main-container {
 	width: 100%;
 	max-width: 767.98px;

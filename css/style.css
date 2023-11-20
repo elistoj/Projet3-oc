@@ -145,7 +145,7 @@ li.rest{
 	flex-wrap: wrap;
 }
 .card-content p{
-	display: inline;
+	display: flex;
 	justify-content: space-between;
 	align-content: space-between;
 }

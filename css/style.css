@@ -273,10 +273,10 @@ input.select-button {
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
 }
-.buttons:hover, .button:focus, .button:focus-within {
+.buttons:hover, .buttons:focus, .button:focus-within {
   box-shadow: 0 0.5px 6px rgba(0, 0, 0, 0.23), 0 0.5px 5px rgba(0, 0, 0, 0.15);
 }
-.buttons:hover::after, .button:focus::after {
+.buttons:hover::after, .buttons:focus::after {
   opacity: 1;
 }
 .buttons::after {

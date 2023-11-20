@@ -185,12 +185,6 @@ footer{
 	align-items: flex-start;
 	
 }
-li a{
-	color: #FFF;
-	font-size: 16px;
-	font-weight: 500;
-	
-}
 li.foot-lien{
 	padding-top: 7px;
 }
@@ -201,7 +195,10 @@ li {
 	color: #FFF;
 
 }
-footer ul li a {
+footer ul li a {	
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 500;
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
   footer ul li a i {

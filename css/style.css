@@ -149,7 +149,7 @@ li.rest{
 	justify-content: space-between;
 	align-content: space-between;
 }
-.card .card-label {
+.card {
 	display: flex;
 	justify-content: space-between;
 }

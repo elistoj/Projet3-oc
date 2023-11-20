@@ -149,6 +149,7 @@ li.rest p{
 }
 .card-content p{
 	display: inline;
+	justify-content: space-between;
 }
 .card img {
 	height: 231px;

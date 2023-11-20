@@ -201,3 +201,14 @@ li {
 	color: #FFF;
 
 }
+footer ul li a {
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+  footer ul li a i {
+	width: 25px;
+	font-size: 13px;
+}
+footer ul li a:hover, footer ul li a:focus {
+	opacity: 0.7;
+	text-decoration: underline;
+}

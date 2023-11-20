@@ -137,7 +137,6 @@ li.rest p{
 }
 
 .card{
-	height: 251px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;

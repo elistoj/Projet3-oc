@@ -257,51 +257,15 @@ input.select-button {
 .like-button input:focus + label i, .like-button input:hover + label i {
   filter: drop-shadow(0 0 1px gray);
 }
+button{
+	position: absolute;
+	z-index: 2;
 
-.buttons {
-  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.13), 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  cursor: pointer;
-  z-index: 1;
-  position: relative;
-  padding: 15px 22px;
-  border-radius: 30px;
-  border: none;
-  font-weight: medium;
-  font-size: 15px;
-  color: white;
-  background: #9356dc;
-  background: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
-}
-.buttons:hover, .buttons:focus, .button:focus-within {
-  box-shadow: 0 0.5px 6px rgba(0, 0, 0, 0.23), 0 0.5px 5px rgba(0, 0, 0, 0.15);
-}
-.buttons:hover::after, .buttons:focus::after {
-  opacity: 1;
-}
-.buttons::after {
-  content: "";
-  opacity: 0;
-  transition: opacity 600ms ease;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 30px;
-  background: #ff79da;
-  background: linear-gradient(353deg, #ff79da 0%, #ff98e2 100%);
-}
-.buttons:visited {
-  color: white;
-}
-.buttons:focus {
-  outline-color: black;
 }
 .card img {
 	height: 231px;
-
+	position: relative;
+	z-index: 1;
 }
 footer p{
 	color: var(--White, #FFF);

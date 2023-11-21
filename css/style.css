@@ -260,8 +260,6 @@ input.select-button {
 button{
 	position: absolute;
 	z-index: 2;
-	bottom: 132px;
-	left: 251px;
 	height: 29px;
 
 }

@@ -266,6 +266,7 @@ button{
 }
 .card img {
 	height: 231px;
+	width: 100%;
 	position: relative;
 	z-index: 1;
 }

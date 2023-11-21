@@ -261,7 +261,7 @@ button{
 	position: absolute;
 	z-index: 2;
 	height: 29px;
-	padding-left: 251px;
+	margin-left: 251px;
 
 }
 .card img {

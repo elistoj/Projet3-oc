@@ -228,6 +228,7 @@ input.select-button {
 	width: 100%;
 	position: relative;
 	z-index: 1;
+	object-fit: cover;
 }
 footer p{
 	color: var(--White, #FFF);

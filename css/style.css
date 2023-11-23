@@ -11,7 +11,9 @@
 	--blue-light: #89c8fa;
 	--white: #FFF;
 	--Grey: #353535;
+	--Background:#F6F6F6;
 }
+
 main {
 	display: block;
 }
@@ -97,7 +99,6 @@ header{
 	background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 	align-items: center;
-	width: 218px;
 	height: 50px;
 	margin-top: 40px;
 	padding-left: 18.5px;
@@ -108,7 +109,6 @@ header{
 a.boutons{
 	color: #FFF;
 	display: flex;
-	width: 180.495px;
 	height: 24px;
 	flex-direction: column;
 	justify-content: center;
@@ -116,6 +116,9 @@ a.boutons{
 input{
 	font-size: 16px;
 	font-weight: 500;
+}
+.menuu{
+	display: block;
 }
 li.rest{
 	display: flex;
@@ -129,42 +132,90 @@ li.rest{
 	margin-left: 28px;
 	margin-right: 20px;
 }
+.number{
+	position: absolute;
+    left: 15px;
+    line-height: 24px;
+    width: 24px;
+    background: #9356dc;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+.fa-solid {
+	margin-right: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	font-size: 19px;
+}
+.fa-solid.fa-store{
+	
+	color: #9356dc;
+}
+
+#restaurants{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom: 66px;
+	background: var(--Background, #F6F6F6);
+}
 .restaurants-cards{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 16px;
+	padding-left: 17px;
+	padding-right: 18px;
 }
-
-.restaurants-cards .card a{
-	display: flex;
-	flex-wrap: wrap;
+.card{
+	height: 251px;
+	display: block;
 	flex-direction: column;
-
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 20px;
 }
 .card a{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 100%;
-	height: 251px;
+	overflow: hidden;
 }
 .nouveau{
 	position: absolute;
 	z-index: 2;
 	height: 29px;
 	margin-top: 15px;
-	margin-left: 80%;
-	border-radius: 10px;
+	right: 35px;
 	background: var(--Green, #99E2D0);
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	font-size: 14px;
+	padding-left: 9px;
+	padding-right: 9.63px;
+	color: #008766;
+	font-weight: 500;
 }
 .card img {
-	height: 194px;
-	width: 100%;
+	height: 170px;
 	position: relative;
 	z-index: 1;
 	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+.card-content{
+	padding-top: 16px;
+	padding-left: 13px;
+	padding-bottom: 15px;
+	gap: 5px;
+	width: 70%;
+
 }
 .card-content p{
 	display: flex;
@@ -194,14 +245,20 @@ input.select-button {
     bottom: 20px;
     z-index: 1;
 }
+.like-button{
+	right: 200px;
+	top: 50px;
+}
 .like-button input {
   opacity: 0;
   position: absolute;
   left: -9999px;
 }
+
 .like-button input + label {
   filter: drop-shadow(0 0 1px black);
   cursor: pointer;
+ padding-left: 85%;
 }
 .like-button input + label i {
   font-size: 20px;
@@ -244,6 +301,9 @@ footer{
 	flex-direction: column;
 	align-items: flex-start;
 	
+}
+.fa-solid.fa-utensils, .fa-solid.fa-handshake-angle{
+	display: inline;
 }
 li.foot-lien{
 	padding-top: 7px;

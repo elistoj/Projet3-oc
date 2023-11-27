@@ -18,7 +18,7 @@
 	<div class="main-container">
 		<header>
 			<div class="logo" id="logo" title="Oh my food!">
-				<h1>Oh my food!</h1>
+				<p>Oh my food!</p>
 				<form action="#" id="formulaire" method="post" name="formulaire">
 					<i class="fa-solid fa-location-dot"></i> <input name="localisation" placeholder="Paris,Belleville" type="text">
 				</form>
@@ -27,32 +27,36 @@
 		<main>
 			<section id="navigation">
 				<div id="identite_du_site">
-					<h2>Réservez le menu qui vous convient</h2>
+					<h1>Réservez le menu qui vous convient</h1>
 					<p class="subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-				</div><a class="boutons" href="#restaurants">Explorer nos restaurants</a>
+				</div>
+				<a class="boutons" href="#restaurants">Explorer nos restaurants</a>
 			</section>
 			<section class="fonctionnement" id="fonctionnement">
 				<div id="fonctionnement_restaurants">
-					<h2>Fonctionnement</h2>
+					<h1>Fonctionnement</h1>
 				</div>
 				<nav class="menuu">
 					<ul class="menu">
 						<li class="rest">
 							<div class="number">
 								<p>1</p>
-							</div><i class="fa-solid fa-mobile-screen-button icone_filtres"></i>
+							</div>
+							<i class="fa-solid fa-mobile-screen-button icone_filtres"></i>
 							<p>Choisissez un restaurant</p>
 						</li>
 						<li class="rest">
 							<div class="number">
 								<p>2</p>
-							</div><i class="fa-solid fa-list icone_filtres"></i>
+							</div>
+							<i class="fa-solid fa-list icone_filtres"></i>
 							<p>Composez votre menu</p>
 						</li>
 						<li class="rest">
 							<div class="number">
 								<p>3</p>
-							</div><i class="fa-solid fa-store icone_filtres"></i>
+							</div>
+							<i class="fa-solid fa-store icone_filtres"></i>
 							<p>Dégustez au restaurant</p>
 						</li>
 					</ul>
@@ -60,81 +64,62 @@
 			</section>
 			<section id="restaurants">
 				<div class="restaurants">
-					<h2 class="section-title">Restaurants</h2>
+					<h1 class="section-title">Restaurants</h1>
 				</div>
 				<div class="restaurants-cards">
 					<article class="card">
-						
-						<a href="./1-La-palette-du-gout.html">
-							<img alt="Image de le table avec des glasses" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-							<p class="nouveau">Nouveau</p> 
-							<div class="card-content">
+						<a href="./1-La-palette-du-gout.html"><img alt="Image de le table avec des glasses" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+						<p class="nouveau">Nouveau</p>
+						<div class="card-content">
 							<div class="card-txt">
 								<h3 class="card-title">La palette du goût</h3>
-								<p class="card-subtitle">Ménilmontant </p>
+								<p class="card-subtitle">Ménilmontant</p>
 							</div>
-							</div>
+						</div>
 						</a>
 						<div class="like-button">
-							<input id="palette-menilmontant" type="checkbox" value="palette-menilmontant">
-							<label for="palette-menilmontant">
-								<i role="img" aria-hidden="true" class="fas fa-heart"></i>
-								<span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
-							</label>
+							<input id="palette-menilmontant" type="checkbox" value="palette-menilmontant"> <label for="palette-menilmontant"><i aria-hidden="true" class="fas fa-heart" role="img"></i> <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span></label>
 						</div>
 					</article>
 					<article class="card">
-						<a href="./3-La-note-enchantee.html">
-							<img alt="Image de le table avec manger" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-							<p class="nouveau">Nouveau</p> 
-							<div class="card-content">
+						<a href="./3-La-note-enchantee.html"><img alt="Image de le table avec manger" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+						<p class="nouveau">Nouveau</p>
+						<div class="card-content">
 							<div class="card-txt">
 								<h3 class="card-title">La note enchantée</h3>
 								<p class="card-subtitle">Charonne</p>
 							</div>
-							</div>
-					</a>
-					<div class="like-button">
-						<input id="palette-menilmontant2" type="checkbox" value="palette-menilmontant">
-						<label for="palette-menilmontant">
-							<i role="img" aria-hidden="true" class="fas fa-heart"></i>
-							<span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
-						</label>
-					</div>
+						</div>
+						</a>
+						<div class="like-button">
+							<input id="palette-menilmontant2" type="checkbox" value="palette-menilmontant"> <label for="palette-menilmontant"><i aria-hidden="true" class="fas fa-heart" role="img"></i> <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span></label>
+						</div>
 					</article>
 					<article class="card">
 						<a href="./4-A-la-francaise.html"><img alt="Image de le table avec manger blanche" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
 						<div class="card-content">
 							<div class="card-txt">
 								<h3 class="card-title">À la française</h3>
-								<p class="card-subtitle">Cité Rouge </p>
+								<p class="card-subtitle">Cité Rouge</p>
 							</div>
 						</div>
-					</a>
-					<div class="like-button">
-						<input id="palette-menilmontant3" type="checkbox" value="palette-menilmontant">
-						<label for="palette-menilmontant">
-							<i role="img" aria-hidden="true" class="fas fa-heart"></i>
-							<span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
-						</label>
-					</div>
+						</a>
+						<div class="like-button">
+							<input id="palette-menilmontant3" type="checkbox" value="palette-menilmontant"> <label for="palette-menilmontant"><i aria-hidden="true" class="fas fa-heart" role="img"></i> <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span></label>
+						</div>
 					</article>
 					<article class="card">
 						<a href="./2-Le-delice-des-sens.html"><img alt="Image de le table avec manger roouge" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
 						<div class="card-content">
 							<div class="card-txt">
 								<h3 class="card-title">Le délice des sens</h3>
-								<p class="card-subtitle">Folie-Méricourt </p>
+								<p class="card-subtitle">Folie-Méricourt</p>
 							</div>
 						</div>
-					</a>
-					 <div class="like-button">
-                    <input id="palette-menilmontant4" type="checkbox" value="palette-menilmontant">
-                    <label for="palette-menilmontant">
-                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
-                        <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
-                    </label>
-                	</div>
+						</a>
+						<div class="like-button">
+							<input id="palette-menilmontant4" type="checkbox" value="palette-menilmontant"> <label for="palette-menilmontant"><i aria-hidden="true" class="fas fa-heart" role="img"></i> <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span></label>
+						</div>
 					</article>
 				</div>
 			</section>

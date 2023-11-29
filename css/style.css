@@ -485,7 +485,7 @@ footer ul li a:hover, footer ul li a:focus {
 		padding-left:5px ;
 	}
 	.menu{
-		padding-right: 180px;
+		flex-wrap: nowrap;
 		justify-content: space-around;
 	}
 	#restaurants{

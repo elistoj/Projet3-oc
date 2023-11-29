@@ -69,8 +69,6 @@ h2 {
 	font-weight: 300;
 	line-height: normal;
 	text-transform: uppercase;
-}
-h2.section-title2:hover, h2.section-title3:hover, h2.section-title2:focus, h2.section-title3:focus, h2.section-title2:active, h2.section-title3:active {
 	border-bottom: 2px solid var(--green-light);
 	width: 40px;
 	padding-bottom: 12px;
@@ -325,6 +323,7 @@ footer {
 }
 li.foot-lien {
 	padding-top: 7px;
+	gap: 7px;
 }
 li {
 	list-style-type: none;

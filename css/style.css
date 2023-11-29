@@ -478,7 +478,6 @@ footer ul li a:hover, footer ul li a:focus {
 	li.rest{
 		justify-content: space-between;
 		gap:15px;
-		width: 33%;
 	}
 	.fonctionnement p{
 		padding-right: 5px;

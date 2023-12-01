@@ -589,7 +589,7 @@ footer ul li a:hover, footer ul li a:focus {
 	.restaurants_h2{
 		margin-left: 30px;
 	}
-	.restaurants-cards{
+	.main-container .restaurants-cards{
 		display: flex;
 		flex-direction: row;
 		flex-wrap:wrap;

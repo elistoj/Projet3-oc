@@ -260,7 +260,7 @@ input.select-button {
 }
 .card_like-button {
 	position: relative;
-	padding-left: 85%;
+	margin-left: 85%;
 	bottom: 45px;
 }
 .card_like-button input {
@@ -411,6 +411,8 @@ footer ul li a:hover, footer ul li a:focus {
 }
 .main-container2-menuus .card-text{
 	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
 }
 .main-container2-menuus .card.subtitle {
 	font-size: 15.043px;
@@ -643,7 +645,7 @@ footer ul li a:hover, footer ul li a:focus {
 	  	padding-left: 72%;
   	}
 }
-@media screen and (min-width:1024.1px) and (max-width:1440px){
+@media screen and (min-width:1025px) and (max-width:1440px){
 	.main-container h2{
 		font-size: 40px;
 		font-style: normal;
@@ -686,7 +688,12 @@ footer ul li a:hover, footer ul li a:focus {
 		width: 45%;
 	}
 	.main-container .nouveau{
-		margin-left: 375px;
+		margin-top: 15px;
+		position: relative;
+	bottom: 165px;
+	right: 5%;
+	margin-left: 82%;
+	margin-bottom: -35px;
 	}
 	.main-container .foot_colonne {
 		display: flex;

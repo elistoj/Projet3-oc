@@ -524,7 +524,7 @@ footer ul li a:hover, footer ul li a:focus {
 	font-size: 15.043px;
 	font-style: normal;
 	font-weight: 700;
-	margin-right: -50%;
+	margin-right: -1%;
 	margin-top: 38px;
 	display: flex;
 	align-items: flex-end;
@@ -540,7 +540,7 @@ footer ul li a:hover, footer ul li a:focus {
 	font-size: 15.043px;
 	font-style: normal;
 	font-weight: 700;
-	margin-left: 34%;
+	margin-left: 22%;
 	margin-top: 38px;
 }
 #bout{
@@ -632,6 +632,19 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container2 .like-button2{
 	  	padding-left: 72%;
   	}
+	.main-container2-menuus .cards_check {
+		margin-right: -170px;
+		margin-left: 110px;
+	}
+	.main-container2-menuus .cards_prix {
+		margin-left: 60%;
+	}
+	.main-container2-menuus .cards_prix2 {
+		margin-left: 60%;
+	}
+	.main-container2-menuus .cards_prix3 {
+		margin-left: 66%;
+	}
 }
 @media screen and (min-width:1025px) {
 	.main-container h2{
@@ -725,6 +738,15 @@ footer ul li a:hover, footer ul li a:focus {
 	}
 	.main-container2 .like-button2{
 		padding-left: 65%;
+	}
+	.main-container2-menuus .cards_prix {
+		margin-left: 70%;
+	}
+	.main-container2-menuus .cards_prix2 {
+		margin-left: 70%;
+	}
+	.main-container2-menuus .cards_prix3 {
+		margin-left: 76%;
 	}
 }
 

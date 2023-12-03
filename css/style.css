@@ -698,7 +698,7 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container .card{
 		width: 45%;
 	}
-	.main-container .nouveau{
+	.nouveau{
 		margin-top: 15px;
 		position: relative;
 		bottom: 165px;
@@ -706,7 +706,7 @@ footer ul li a:hover, footer ul li a:focus {
 		margin-left: 82%;
 		margin-bottom: -35px;
 	}
-	.main-container .foot_colonne {
+	.foot_colonne {
 		display: flex;
 		flex-direction:row-reverse;
 		align-self:flex-end;
@@ -718,13 +718,13 @@ footer ul li a:hover, footer ul li a:focus {
 		padding-bottom: 30px;
 		padding-left: 25px;
 	}
-	.main-container footer ul{
+	footer ul{
 		display: flex;
 		flex-direction:row ;
 		justify-content: space-between;
 		gap: 20px;
 	}
-	.main-container footer p{
+	footer p{
 		padding-bottom: 0;
 	}
 	/* Pages */

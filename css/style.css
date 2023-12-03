@@ -282,12 +282,6 @@ input.select-button {
 	-webkit-text-fill-color: transparent;
 	transition: all 500ms ease 0ms;
 }
-.card_like-button input+label i:hover {
-	background-color: #ff79da;
-	background-position: 35% 35%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 .card_like-button input:checked+label i {
 	background-color: #9356dc;
 	background-position: bottom;
@@ -462,12 +456,6 @@ footer ul li a:hover, footer ul li a:focus {
 	-webkit-text-fill-color: transparent;
 	transition: all 500ms ease 0ms;
 }
-.like-button2 input+label i:hover {
-	background-color: #ff79da;
-	background-position: 35% 35%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 .like-button2 input:checked+label i {
 	background-color: #9356dc;
 	background-position: bottom;
@@ -475,7 +463,7 @@ footer ul li a:hover, footer ul li a:focus {
 	-webkit-text-fill-color: transparent;
 	animation: inflate 250ms ease 0s forwards normal;
 }
-.like-button2 input:focus+label i, .like-button input:hover+label i {
+.like-button2 input:focus+label i {
 	filter: drop-shadow(0 0 1px gray);
 }
 .card-title2 {
@@ -645,7 +633,7 @@ footer ul li a:hover, footer ul li a:focus {
 	  	padding-left: 72%;
   	}
 }
-@media screen and (min-width:1025px) and (max-width:1440px){
+@media screen and (min-width:1025px) {
 	.main-container h2{
 		font-size: 40px;
 		font-style: normal;
@@ -653,8 +641,13 @@ footer ul li a:hover, footer ul li a:focus {
 	}
 	.main-container .fonctionnement-menuu-menu{
 		display: flex;
-		flex-wrap:wrap;
-		gap:20px;
+		flex-wrap:nowrap;
+		gap:0;
+		overflow: hidden;
+		/* si nécessaire, texte rogné et ... */
+		text-overflow: ellipsis;
+		/* empêche le retour à la ligne */
+		white-space: nowrap;
 	}
 	.main-container .fonctionnement{
 		display: flex;
@@ -666,12 +659,14 @@ footer ul li a:hover, footer ul li a:focus {
 	}
 	.main-container .fonctionnement-menuu-number{
 		position: relative;
-		left: -35px;
+		left: -15px;
 	}
 	.main-container li.fonctionnement-menuu-rest{
 		gap:15px;
-		margin-left: 0;
-		padding-right:60px;
+		padding-right:50px;
+		padding-left: 0;
+		gap:15px;
+		margin-left: 20px;
 	}
 	.main-container #restaurants{
 		padding-right: 180px;
@@ -690,10 +685,10 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container .nouveau{
 		margin-top: 15px;
 		position: relative;
-	bottom: 165px;
-	right: 5%;
-	margin-left: 82%;
-	margin-bottom: -35px;
+		bottom: 165px;
+		right: 5%;
+		margin-left: 82%;
+		margin-bottom: -35px;
 	}
 	.main-container .foot_colonne {
 		display: flex;

@@ -618,17 +618,20 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container footer p{
 		padding-bottom: 0;
 	}
-	.main-container2 .menuus{
+	.main-container2-menuus{
 		margin-left: 133px;
 	  	margin-right: 132px;
   	}
   	.main-container2-h2 {
-	  	text-align: left;
+	  	text-align: center;
   	}
-	.main-container2 .menus-cards{
-	  	padding-left: 50px;
-	  	padding-right: 50px;
-  	}
+	.like-button2 {
+		padding-left: 80%;
+	}
+	.main-container2-menuus .menus-cards {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
 	.main-container2 .like-button2{
 	  	padding-left: 72%;
   	}
@@ -725,16 +728,22 @@ footer ul li a:hover, footer ul li a:focus {
 		padding-bottom: 0;
 	}
 	/* Pages */
-	.main-container2 .menuus{
+	.main-container2-menuus{
  	 	margin-left: 193px;
 		margin-right: 192px;
 	}
 	.main-container2 .main-container2-h2 {
 		text-align: center;
 	}
-	.main-container2 .menus-cards{
-		padding-left: 200px;
-		padding-right: 200px;
+	.main-container2-h2 {
+		text-align: center;
+	}
+	.like-button2 {
+		padding-left: 70%;
+	}
+	.main-container2-menuus .menus-cards {
+		margin-left: 200px;
+		margin-right: 200px;
 	}
 	.main-container2 .like-button2{
 		padding-left: 65%;

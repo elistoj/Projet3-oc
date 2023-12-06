@@ -346,6 +346,7 @@ footer ul li a:hover, footer ul li a:focus {
 /*pages*/
 .main-container2{
 	max-width: 1440px;
+	margin: 0;
 }
 .logosign {
 	display: flex;
@@ -379,7 +380,7 @@ footer ul li a:hover, footer ul li a:focus {
 	align-items: center;
 }
 .main-container2-menuus .cards {
-	gap: 5px;
+	gap: 10px;
 	border-radius: 15.043px;
 	background: var(--White, #FFF);
 	box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
@@ -411,17 +412,11 @@ footer ul li a:hover, footer ul li a:focus {
 	padding-top: 15px;
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 88%;
 }
 .main-container2-menuus .card.subtitle {
 	font-size: 15.043px;
 	font-weight: 300;
-}
-.main-container2 #bout {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
 }
 .main-container2-menuus {
 	margin-top: -30px;
@@ -432,6 +427,12 @@ footer ul li a:hover, footer ul li a:focus {
 	position: relative;
 	z-index: 1;
 }
+.main-container2 #bout {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
 .main-container2-menuus .boutons {
 	padding-left: 48px;
 	padding-right: 48px;
@@ -439,10 +440,18 @@ footer ul li a:hover, footer ul li a:focus {
 	font-size: 16px;
 	font-weight: 500;
 }
+.titre{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: stretch;
+}
 .like-button2 {
 	position: relative;
-	padding-left: 90%;
 	bottom: 29px;
+	padding-left: 88%;
 }
 .like-button2 input {
 	opacity: 0;
@@ -536,6 +545,7 @@ footer ul li a:hover, footer ul li a:focus {
 	margin-top: 38px;
 	display: flex;
 	align-items: flex-end;
+	padding-right: 30px;
 }
 #bout{
 	display: flex;
@@ -628,18 +638,21 @@ footer ul li a:hover, footer ul li a:focus {
 	  	text-align: center;
 		padding-left: 0;
   	}
+	.titre{
+		align-content: center;
+	}
 	.like-button2 {
-		padding-left: 80%;
+		padding-left: 77%;
 	}
 	.main-container2-menuus .menus-cards {
 		margin-left: 80px;
 		margin-right: 80px;
 	}
 	.main-container2-menuus .card-text {
-		width: 60%;
+		width: 88%;
 	}
 }
-@media screen and (min-width:1025px) and (max-width:1440px){
+@media screen and (min-width:1025px){
 	.main-container h2{
 		font-size: 40px;
 		font-style: normal;
@@ -731,9 +744,13 @@ footer ul li a:hover, footer ul li a:focus {
 	}
 	.main-container2 .main-container2-h2 {
 		text-align: center;
+		padding-left: 0;
 	}
 	.main-container2-h2 {
 		text-align: center;
+	}
+	.titre{
+		align-content: center;
 	}
 	.like-button2 {
 		padding-left: 70%;
@@ -742,12 +759,13 @@ footer ul li a:hover, footer ul li a:focus {
 		margin-left: 200px;
 		margin-right: 200px;
 	}
-	.main-container2 .like-button2{
-		padding-left: 65%;
-	}
 	.main-container2-menuus .card-text {
-		width:60%;
+		width:90%;
 	}
 }
-
+@media screen and (min-width:1441px){
+	.main-container2{
+		margin: auto;
+	}
+}
 	

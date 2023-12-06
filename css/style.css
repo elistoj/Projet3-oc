@@ -349,6 +349,8 @@ footer ul li a:hover, footer ul li a:focus {
 	display: flex;
 	margin-top: 14px;
 	margin-top: 13px;
+	justify-content: space-between;
+	width: 95%;
 }
 .fa-solid.fa-arrow-left {
 	margin-left: 17px;
@@ -613,7 +615,7 @@ footer ul li a:hover, footer ul li a:focus {
 	.logosign {
 		display: flex;
 		justify-content: space-between;
-		width: 63%;
+		width: 65%;
 	}
 	.main-container2-menuus{
 		margin-left: 133px;

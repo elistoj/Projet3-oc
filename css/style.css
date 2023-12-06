@@ -347,6 +347,7 @@ footer ul li a:hover, footer ul li a:focus {
 /*pages*/
 .logosign {
 	display: flex;
+	margin-top: 14px;
 }
 .fa-solid.fa-arrow-left {
 	margin-left: 17px;
@@ -485,10 +486,6 @@ footer ul li a:hover, footer ul li a:focus {
 	text-overflow: ellipsis;
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
-}
-.logosign {
-	display: flex;
-	margin-top: 25px;
 }
 .main-container2_h1{
 	margin-left: 0;
@@ -725,7 +722,6 @@ footer ul li a:hover, footer ul li a:focus {
 		display: flex;
 		justify-content: space-between;
 		width: 60%;
-		padding-top: 25px;
 	}
 	.main-container2_h1{
 		margin-left: 550px;

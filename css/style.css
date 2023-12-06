@@ -14,6 +14,7 @@
 	--Grey: #353535;
 	--Background: #F6F6F6;
 	--Grey-2: #EAEAEA;
+	--Button-Gradient:linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)
 }
 main {
 	display: block;
@@ -21,6 +22,7 @@ main {
 .main-container {
 	width: 100%;
 	min-width: 320px;
+	max-width: 1440px;
 	box-sizing: border-box;
 }
 body {
@@ -299,9 +301,6 @@ footer p {
 	font-weight: 400;
 	gap: 7px;
 }
-footer a{
-	justify-content: space-between;
-}
 footer {
 	background-color: var(--Grey, #353535);
 	display: flex;
@@ -345,24 +344,24 @@ footer ul li a:hover, footer ul li a:focus {
 	text-decoration: underline;
 }
 /*pages*/
+.main-container2{
+	max-width: 1440px;
+}
 .logosign {
 	display: flex;
 	margin-top: 14px;
 	margin-top: 13px;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 95%;
 }
 .fa-solid.fa-arrow-left {
-	margin-left: 17px;
 	margin-right: 42px;
+	margin-left: 20px;
 	margin-top: 14px;
 }
 .photos img {
-	height: 275px;
+	height: 235px;
 	width: 100%;
-	position: absolute;
-	z-index: -1;
-	padding-bottom: -32px;
 	object-fit: cover;
 }
 .main-container2-menuus h3{
@@ -393,6 +392,7 @@ footer ul li a:hover, footer ul li a:focus {
 	padding-left: 5px;
 	padding-right: 5px;
 	overflow: hidden;
+	width: 95%;
 }
 .main-container2-menuus .menus-cards {
 	display: flex;
@@ -411,7 +411,7 @@ footer ul li a:hover, footer ul li a:focus {
 	padding-top: 15px;
 	display: flex;
 	flex-direction: column;
-	width: 85%;
+	width: 60%;
 }
 .main-container2-menuus .card.subtitle {
 	font-size: 15.043px;
@@ -424,11 +424,13 @@ footer ul li a:hover, footer ul li a:focus {
 	align-items: center;
 }
 .main-container2-menuus {
-	margin-top: 230px;
+	margin-top: -30px;
 	border-top-right-radius: 40px;
 	border-top-left-radius: 40px;
 	background-color: var(--Background, #F6F6F6);
 	padding-bottom: 40px;
+	position: relative;
+	z-index: 1;
 }
 .main-container2-menuus .boutons {
 	padding-left: 48px;
@@ -502,18 +504,18 @@ footer ul li a:hover, footer ul li a:focus {
 	padding-top: 30px;
 	text-align:left;
 	padding-right: 0;
+	white-space: nowrap;
 }
 .main-container2-menuus .cards_check {
 	background: var(--green-light);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60px;
 	height: 69px;
 	color: white;
 	font-size: 15px;
-	margin-right: -170px;
-	margin-left: 110px;
+	margin-left: 0;
+	margin-right: -5px;
 }
 .main-container2-menuus .cards {
 	line-height: 25px;
@@ -523,7 +525,6 @@ footer ul li a:hover, footer ul li a:focus {
 	text-overflow: ellipsis;
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
-	padding-right: 10px;
 	cursor: pointer;
 	overflow: hidden;
 	padding-left: 12px;
@@ -532,7 +533,6 @@ footer ul li a:hover, footer ul li a:focus {
 	font-size: 15.043px;
 	font-style: normal;
 	font-weight: 700;
-	margin-right: -1%;
 	margin-top: 38px;
 	display: flex;
 	align-items: flex-end;
@@ -617,12 +617,16 @@ footer ul li a:hover, footer ul li a:focus {
 		justify-content: space-between;
 		width: 65%;
 	}
+	.photos img{
+		height: 300px;
+	}
 	.main-container2-menuus{
 		margin-left: 133px;
 	  	margin-right: 132px;
   	}
   	.main-container2-h2 {
 	  	text-align: center;
+		padding-left: 0;
   	}
 	.like-button2 {
 		padding-left: 80%;
@@ -631,22 +635,14 @@ footer ul li a:hover, footer ul li a:focus {
 		margin-left: 80px;
 		margin-right: 80px;
 	}
-	.main-container2 .like-button2{
-	  	padding-left: 72%;
-  	}
-	.main-container2-menuus.card-text{
-		width: 70%;
-	}
-	.main-container2-menuus .cards_check {
-		margin-right: -170px;
-		margin-left: 110px;
+	.main-container2-menuus .card-text {
+		width: 60%;
 	}
 }
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1025px) and (max-width:1440px){
 	.main-container h2{
 		font-size: 40px;
 		font-style: normal;
-	
 	}
 	.main-container .fonctionnement-menuu-menu{
 		display: flex;
@@ -730,6 +726,9 @@ footer ul li a:hover, footer ul li a:focus {
  	 	margin-left: 193px;
 		margin-right: 192px;
 	}
+	.photos img{
+		height: 350px;
+	}
 	.main-container2 .main-container2-h2 {
 		text-align: center;
 	}
@@ -746,8 +745,8 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container2 .like-button2{
 		padding-left: 65%;
 	}
-	.card-text{
-		width: 40%;
+	.main-container2-menuus .card-text {
+		width:60%;
 	}
 }
 

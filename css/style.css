@@ -407,6 +407,7 @@ footer ul li a:hover, footer ul li a:focus {
 	padding-top: 15px;
 	display: flex;
 	flex-direction: column;
+	width: 85%;
 }
 .main-container2-menuus .card.subtitle {
 	font-size: 15.043px;
@@ -532,20 +533,6 @@ footer ul li a:hover, footer ul li a:focus {
 	display: flex;
 	align-items: flex-end;
 }
-.main-container2-menuus .cards_prix2 {
-	font-size: 15.043px;
-	font-style: normal;
-	font-weight: 700;
-	margin-left: 20%;
-	margin-top: 38px;
-}
-.main-container2-menuus .cards_prix3 {
-	font-size: 15.043px;
-	font-style: normal;
-	font-weight: 700;
-	margin-left: 22%;
-	margin-top: 38px;
-}
 #bout{
 	display: flex;
 	justify-content: center;
@@ -641,18 +628,12 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container2 .like-button2{
 	  	padding-left: 72%;
   	}
+	.card-text{
+		width: 70%;
+	}
 	.main-container2-menuus .cards_check {
 		margin-right: -170px;
 		margin-left: 110px;
-	}
-	.main-container2-menuus .cards_prix {
-		margin-left: 30%;
-	}
-	.main-container2-menuus .cards_prix2 {
-		margin-left: 60%;
-	}
-	.main-container2-menuus .cards_prix3 {
-		margin-left: 66%;
 	}
 }
 @media screen and (min-width:1025px) {
@@ -757,14 +738,8 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container2 .like-button2{
 		padding-left: 65%;
 	}
-	.main-container2-menuus .cards_prix {
-		margin-left: 55%;
-	}
-	.main-container2-menuus .cards_prix2 {
-		margin-left: 70%;
-	}
-	.main-container2-menuus .cards_prix3 {
-		margin-left: 76%;
+	.card-text{
+		width: 40%;
 	}
 }
 

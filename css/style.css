@@ -486,6 +486,10 @@ footer ul li a:hover, footer ul li a:focus {
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
 }
+.logosign {
+	display: flex;
+	margin-top: 25px;
+}
 .main-container2_h1{
 	margin-left: 0;
 }
@@ -608,8 +612,10 @@ footer ul li a:hover, footer ul li a:focus {
 	.main-container footer p{
 		padding-bottom: 0;
 	}
-	.main-container2_h1{
-		margin-left: 230px;
+	.logosign {
+		display: flex;
+		justify-content: space-between;
+		width: 63%;
 	}
 	.main-container2-menuus{
 		margin-left: 133px;
@@ -715,8 +721,15 @@ footer ul li a:hover, footer ul li a:focus {
 		padding-bottom: 0;
 	}
 	/* Pages */
+	.logosign {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		padding-top: 25px;
+	}
 	.main-container2_h1{
 		margin-left: 550px;
+		
 	}
 	.main-container2-menuus{
  	 	margin-left: 193px;

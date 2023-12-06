@@ -348,6 +348,7 @@ footer ul li a:hover, footer ul li a:focus {
 .logosign {
 	display: flex;
 	margin-top: 14px;
+	margin-top: 13px;
 }
 .fa-solid.fa-arrow-left {
 	margin-left: 17px;

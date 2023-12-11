@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* Un nom de police pour les titres et le logo dans footer suivi d'un nom de famille générique */
+/* Un nom de police pour les textes du site suivi d'un nom de famille générique */
 * {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -32,6 +35,204 @@ body {
 }
 a {
 	text-decoration: none;
+}
+/*Animation dominos au chargement de la page d'accueil*/
+/*Animation des dominos*/
+.animation_avant_chargement {
+	z-index: 1;
+	position: absolute;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	animation: 0ms 2600ms forwards disparition;
+}
+.animation_avant_chargement i {
+	padding-left: 2px;
+	padding-top: 18px;
+	position: relative;
+	display: inline-block;
+	margin: 0 12px;
+	width: 13px;
+	height: 38px;
+	border-radius: 2px;
+	-webkit-box-shadow: 2px 2px 5px 2px #D2D2D2;
+	box-shadow: 2px 2px 5px 2px #D2D2D2;
+	animation: cubic-bezier(0.955, -0.01, 1, 1) inclinaison-dominos;
+	animation-fill-mode: forwards;
+	transform-origin: 100% 100%;
+}
+.animation_avant_chargement i.primary-color {
+	background-color: #9356DC;
+	border: solid #512d7d;
+	border-width: 0px 1px 1px 0px;
+}
+.animation_avant_chargement i.secondary-color {
+	background-color: #FF79DA;
+	border: solid #b64f99;
+	border-width: 0px 1px 1px 0px;
+}
+.animation_avant_chargement i.tertiary-color {
+	background-color: #99E2D0;
+	border: solid #609386;
+	border-width: 0px 1px 1px 0px;
+}
+.animation_avant_chargement i:nth-child(1) {
+	animation-delay: 300ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(2) {
+	animation-delay: 550ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(3) {
+	animation-delay: 800ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(4) {
+	animation-delay: 1050ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(5) {
+	animation-delay: 1300ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(6) {
+	animation-delay: 1550ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(7) {
+	animation-delay: 1800ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(8) {
+	animation-delay: 2050ms;
+	animation-duration: 250ms;
+}
+.animation_avant_chargement i:nth-child(9) {
+	animation-name: inclinaison-dernier-domino;
+	animation-delay: 2300ms;
+	animation-duration: 250ms;
+}
+  
+@keyframes inclinaison-dominos {
+	0% {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: rotate(0deg);
+	}
+	10% {
+	  transform: rotate(10deg);
+	}
+	20% {
+	  transform: rotate(20deg);
+	}
+	30% {
+	  transform: rotate(30deg);
+	}
+	40% {
+	  transform: rotate(40deg);
+	}
+	50% {
+	  transform: rotate(50deg);
+	}
+	60% {
+	  transform: rotate(60deg);
+	}
+	70% {
+	  transform: rotate(70deg);
+	}
+	100% {
+	  transform: rotate(70deg);
+	}
+}
+@keyframes inclinaison-dernier-domino {
+	0% {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: rotate(0deg);
+	}
+	10% {
+	  transform: rotate(10deg);
+	}
+	60% {
+	  transform: rotate(60deg);
+	}
+	70% {
+	  transform: rotate(70deg);
+	}
+	100% {
+	  transform: rotate(90deg);
+	}
+}
+@keyframes disparition {
+	from {
+	  transform: scale(1);
+	  transform: translate(0);
+	}
+	to {
+	  transform: scale(0);
+	  transform: translate(-9999px);
+	}
+}
+  /*Page blanche pendant 3s avant le chargement de la page d'accueil*/
+.commencer_chargement {
+	animation: page_blanche 3000ms;
+}
+  
+@keyframes page_blanche {
+	0% {
+	  opacity: 0;
+	}
+	70% {
+	  opacity: 0.1;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+ 
+  /* Animation - apparition des plats au chargement de la page */
+.cards {
+	animation: apparition-plats 1s;
+}
+  
+.entree1, .plat1, .dessert1 {
+	animation-delay: 50ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+  
+.entree2, .plat2, .dessert2 {
+	animation-delay: 150ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+  
+.entree3, .plat3, .dessert3 {
+	animation-delay: 300ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+  
+.entree4, .plat4, .dessert4 {
+	animation-delay: 450ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+  
+@keyframes apparition-plats {
+	from {
+	  transform: translateY(20px);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
 }
 h1 {
 	font-family: 'Shrikhand';
@@ -116,6 +317,10 @@ h1 {
 	padding-bottom: 13px;
 	justify-content: center;
 	display: flex;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	transition: transform 330ms ease-in-out;
 }
 .main-container a.boutons {
 	color: #FFF;
@@ -124,6 +329,12 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 }
+.buttons:hover {
+	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+	opacity: 0.6;
+	transform: scale(1.1);
+}
+  
 .main-container input {
 	font-size: 16px;
 	font-weight: 500;
@@ -283,14 +494,14 @@ input.select-button {
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	transition: all 500ms ease 0ms;
+	transition: all 100ms ease 0ms;
 }
 .card_like-button input:checked+label i {
 	background-color: #9356dc;
 	background-position: bottom;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: inflate 250ms ease 0s forwards normal;
+	animation: inflate 100ms ease 0s forwards normal;
 }
 .card_like-button input:focus+label i, .like-button input:hover+label i {
 	filter: drop-shadow(0 0 1px gray);
@@ -379,7 +590,6 @@ footer ul li a:hover, footer ul li a:focus {
 	width: 40px;
 	padding-bottom: 12px;
 	flex-shrink: 0;
-	align-items: center;
 }
 .main-container2-menuus .cards {
 	gap: 10px;
@@ -406,15 +616,17 @@ footer ul li a:hover, footer ul li a:focus {
 	margin-left: 18px;
 	margin-right: 18px;
 	margin-bottom: 40px;
+
 }
 .main-container2-menuus .cards {
 	justify-content: space-between;
+
 }
 .main-container2-menuus .card-text{
 	padding-top: 15px;
 	display: flex;
 	flex-direction: column;
-	width: 89%;
+	width: 70%;
 }
 .main-container2-menuus .card.subtitle {
 	font-size: 15.043px;
@@ -472,14 +684,14 @@ footer ul li a:hover, footer ul li a:focus {
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	transition: all 500ms ease 0ms;
+	transition: all 100ms ease 0ms;
 }
 .like-button2 input:checked+label i {
 	background-color: #9356dc;
 	background-position: bottom;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: inflate 250ms ease 0s forwards normal;
+	animation: inflate 100ms ease 0s forwards normal;
 }
 .like-button2 input:focus+label i {
 	filter: drop-shadow(0 0 1px gray);
@@ -526,9 +738,18 @@ footer ul li a:hover, footer ul li a:focus {
 	color: white;
 	font-size: 15px;
 	margin-left: 0;
-	margin-right: -5px;
+	margin-right: -20px;
+	flex-shrink: 0;
+	width: 0;
+	transition: width 1s;
 }
-.main-container2-menuus .cards {
+.cards:hover  .cards_check {
+	width: 65px;
+}
+.cards :hover .cards_check > .fa-check-circle {
+	transform: rotate(360deg);
+}
+.cards {
 	line-height: 25px;
 	flex-grow: 1;
 	overflow: hidden;
@@ -539,6 +760,7 @@ footer ul li a:hover, footer ul li a:focus {
 	cursor: pointer;
 	overflow: hidden;
 	padding-left: 12px;
+	transition: transform 330ms ease-in-out;
 }
 .main-container2-menuus .cards_prix {
 	font-size: 15.043px;
@@ -547,7 +769,6 @@ footer ul li a:hover, footer ul li a:focus {
 	margin-top: 38px;
 	display: flex;
 	align-items: flex-end;
-	padding-right: 40px;
 }
 #bout{
 	display: flex;
@@ -646,12 +867,18 @@ footer ul li a:hover, footer ul li a:focus {
 	.like-button2 {
 		padding-left: 77%;
 	}
-	.main-container2-menuus .menus-cards {
-		margin-left: 80px;
-		margin-right: 80px;
+	.main-container2-menuus .cards {
+		width: 75%;
 	}
-	.main-container2-menuus .card-text {
-		width: 88%;
+	.main-container2-menuus .menus-cards{
+		align-items: center;	
+	}
+	.main-container2-menuus h3{
+		align-self: flex-start;
+		margin-left: 80px;
+	}	
+	.main-container2-menuus .card-text{
+		width: 74%;
 	}
 }
 @media screen and (min-width:1025px){
@@ -761,8 +988,8 @@ footer ul li a:hover, footer ul li a:focus {
 		margin-left: 200px;
 		margin-right: 200px;
 	}
-	.main-container2-menuus .card-text {
-		width:90%;
+	.main-container2-menuus .card-text{
+		width: 84%;
 	}
 }
 @media screen and (min-width:1441px){

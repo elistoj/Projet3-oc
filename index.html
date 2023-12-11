@@ -15,8 +15,20 @@
 	<link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
+	<!--Animation avant le chargement de la page d'accueil-->
+<div class="animation_avant_chargement">
+		<i class="domino primary-color"></i>
+		<i class="domino primary-color"></i>
+		<i class="domino primary-color"></i>
+		<i class="domino secondary-color"></i>
+		<i class="domino secondary-color"></i>
+		<i class="domino secondary-color"></i>
+		<i class="domino tertiary-color"></i>
+		<i class="domino tertiary-color"></i>
+		<i class="domino tertiary-color"></i>
+</div>
 	<div class="main-container">
-		<header>
+		<header class="header commencer_chargement">
 			<div class="logo" id="logo" title="Oh my food!">
 				<h1>Oh my food!</h1>
 				<form action="#" id="logo-formulaire" method="post" name="formulaire">
@@ -25,7 +37,7 @@
 				</form>
 			</div>
 		</header>
-		<main>
+		<main  class="commencer_chargement">
 			<section id="navigation">
 				<div id="identite_du_site">
 					<h2>Réservez le menu qui vous convient</h2>
@@ -81,7 +93,7 @@
 						</a>
 						<div class="card_like-button">
 							<input id="palette-menilmontant" type="checkbox" value="palette-menilmontant">
-							 <label for="palette-menilmontant">
+							 <label for="palette-menilmontant" >
 								<i aria-hidden="true" class="fas fa-heart" role="img"></i>
 								 <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
 							</label>
@@ -100,7 +112,7 @@
 						</a>
 						<div class="card_like-button">
 							<input id="palette-menilmontant2" type="checkbox" value="palette-menilmontant2"> 
-							<label for="palette-menilmontant2">
+							<label  for="palette-menilmontant2">
 								<i aria-hidden="true" class="fas fa-heart" role="img"></i>
 								 <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
 							</label>
@@ -118,7 +130,7 @@
 						</a>
 						<div class="card_like-button">
 							<input id="palette-menilmontant3" type="checkbox" value="palette-menilmontant3"> 
-							<label for="palette-menilmontant3">
+							<label  for="palette-menilmontant3">
 								<i aria-hidden="true" class="fas fa-heart" role="img"></i>
 								 <span class="visually-hidden">Marquer comme "aimé" ce restaurant</span>
 							</label>

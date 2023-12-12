@@ -197,28 +197,28 @@ a {
  
   /* Animation - apparition des plats au chargement de la page */
 .cards {
-	animation: apparition-plats 1s;
+	animation: apparition-plats 3s;
 }
   
-.entree1, .plat1, .dessert1 {
+#entree1, #plat1, #dessert1 {
 	animation-delay: 50ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-.entree2, .plat2, .dessert2 {
+#entree2, #plat2, #dessert2 {
 	animation-delay: 150ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-.entree3, .plat3, .dessert3 {
+#entree3, #plat3, #dessert3 {
 	animation-delay: 300ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-.entree4, .plat4, .dessert4 {
+#entree4, #plat4, #dessert4 {
 	animation-delay: 450ms;
 	animation-fill-mode: forwards;
 	opacity: 0;

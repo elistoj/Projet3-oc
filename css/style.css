@@ -755,7 +755,7 @@ footer ul li :hover  , footer ul li  :focus  {
 .cards:hover  .cards_check,  .cards:active  .cards_check {
 	width: 65px;
 }
-.cards:hover .cards_check > .fa-check-circle, .cards:active  .cards_check> .fa-check-circle {
+.cards:hover .cards_check > .fa-check-circle, .cards:active  .cards_check > .fa-check-circle {
 	transform: rotate(360deg);
 }
 .cards {

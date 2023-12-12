@@ -196,29 +196,29 @@ a {
 }
  
   /* Animation - apparition des plats au chargement de la page */
-.cards {
+.cards  {
 	animation: apparition-plats 3s;
 }
   
-#entree1, #plat1, #dessert1 {
+.cards #entree1, .cards #plat1, .cards #dessert1 {
 	animation-delay: 50ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-#entree2, #plat2, #dessert2 {
+.cards #entree2, .cards #plat2, .cards #dessert2 {
 	animation-delay: 150ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-#entree3, #plat3, #dessert3 {
+.cards #entree3, .cards #plat3, .cards #dessert3 {
 	animation-delay: 300ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
   
-#entree4, #plat4, #dessert4 {
+.cards #entree4, .cards #plat4, .cards #dessert4 {
 	animation-delay: 450ms;
 	animation-fill-mode: forwards;
 	opacity: 0;
@@ -318,6 +318,7 @@ h1 {
 	justify-content: center;
 	display: flex;
 	-webkit-transition: opacity 1s;
+	opacity: 1;
 	transition: transform 330ms ease-in-out;
 }
 .main-container a.boutons {
@@ -328,7 +329,7 @@ h1 {
 	justify-content: center;
 	
 }
-.buttons :hover, .buttons :active{
+.buttons :hover {
 	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 	opacity: 0.6;
 	transform: scale(1.1);
@@ -555,9 +556,10 @@ footer ul li a i {
 	width: 25px;
 	font-size: 13px;
 }
-footer ul li a :hover, footer ul li a :focus {
+footer ul li :hover  , footer ul li  :focus  {
 	opacity: 0.7;
 	text-decoration: underline;
+	transform: scale(1.05)
 }
 /*pages*/
 .main-container2{
@@ -749,14 +751,12 @@ footer ul li a :hover, footer ul li a :focus {
 }
 .cards_check .fa-check-circle {
 	transform: rotate(0deg);
-	transition: transform 500ms ease-in-out;
-  }
+}
 .cards:hover  .cards_check,  .cards:active  .cards_check {
 	width: 65px;
 }
-.cards :hover .cards_check > .fa-check-circle, .cards:active  .cards_check> .fa-check-circle {
+.cards:hover .cards_check > .fa-check-circle, .cards:active  .cards_check> .fa-check-circle {
 	transform: rotate(360deg);
-	transition: transform 500ms ease-in-out;
 }
 .cards {
 	line-height: 25px;

@@ -66,8 +66,8 @@ a {
 	transform-origin: 100% 100%;
 }
 .animation_avant_chargement i.primary-color {
-	background-color: #99E2D0;
-	border: solid #609386;
+	background-color: #FF79DA;
+	border: solid #b64f99;
 	border-width: 0px 1px 1px 0px;
 }
 .animation_avant_chargement i.secondary-color {
@@ -76,8 +76,8 @@ a {
 	border-width: 0px 1px 1px 0px;
 }
 .animation_avant_chargement i.tertiary-color {
-	background-color: #FF79DA;
-	border: solid #b64f99;
+	background-color: #99E2D0;
+	border: solid #609386;
 	border-width: 0px 1px 1px 0px;
 }
 .animation_avant_chargement i:nth-child(1) {
@@ -318,8 +318,6 @@ h1 {
 	justify-content: center;
 	display: flex;
 	-webkit-transition: opacity 1s;
-	-o-transition: opacity 1s;
-	transition: opacity 1s;
 	transition: transform 330ms ease-in-out;
 }
 .main-container a.boutons {
@@ -328,6 +326,7 @@ h1 {
 	height: 24px;
 	flex-direction: column;
 	justify-content: center;
+	
 }
 .buttons:hover {
 	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
@@ -402,6 +401,11 @@ li.fonctionnement-menuu-rest {
 	background-color: white;
 	border-radius: 20px;
 }
+.main-container .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .main-container .card a {
 	display: flex;
 	flex-direction: column;
@@ -551,7 +555,7 @@ footer ul li a i {
 	width: 25px;
 	font-size: 13px;
 }
-footer ul li a:hover, footer ul li a:focus {
+footer ul li a :hover, footer ul li a :focus {
 	opacity: 0.7;
 	text-decoration: underline;
 }

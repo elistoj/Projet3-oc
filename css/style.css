@@ -66,18 +66,18 @@ a {
 	transform-origin: 100% 100%;
 }
 .animation_avant_chargement i.primary-color {
+	background-color: #99E2D0;
+	border: solid #609386;
+	border-width: 0px 1px 1px 0px;
+}
+.animation_avant_chargement i.secondary-color {
 	background-color: #9356DC;
 	border: solid #512d7d;
 	border-width: 0px 1px 1px 0px;
 }
-.animation_avant_chargement i.secondary-color {
+.animation_avant_chargement i.tertiary-color {
 	background-color: #FF79DA;
 	border: solid #b64f99;
-	border-width: 0px 1px 1px 0px;
-}
-.animation_avant_chargement i.tertiary-color {
-	background-color: #99E2D0;
-	border: solid #609386;
 	border-width: 0px 1px 1px 0px;
 }
 .animation_avant_chargement i:nth-child(1) {

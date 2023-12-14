@@ -25,8 +25,8 @@ main {
 .main-container {
 	width: 100%;
 	min-width: 320px;
-	box-sizing: border-box;
-
+	max-width: 1440px;
+	margin: auto;
 }
 body {
 	display: flex;
@@ -254,9 +254,12 @@ h1 {
 	padding-left: 20px;
 }
 .main-container  .subtitle {
+	color: var(--Grey);
 	text-align: center;
 	font-size: 18px;
+	font-style: normal;
 	font-weight: 300;
+	line-height: normal;
 	margin: 0 18px 40px 28px;
 }
 .main-container .restaurants-cards h3{
@@ -341,6 +344,9 @@ li.fonctionnement-menuu-rest {
 	align-items: center;
 	margin:0 20px 20px 28px;
 }
+li.fonctionnement-menuu-rest p {
+	font-weight: 500;
+}
 .fonctionnement-menuu-number {
 	position: absolute;
 	left: 15px;
@@ -353,7 +359,7 @@ li.fonctionnement-menuu-rest {
 }
 .fa-solid {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 20px;
 	height: 20px;
@@ -544,7 +550,8 @@ footer ul li :hover  , footer ul li  :focus  {
 /*pages*/
 .main-container2{
 	min-width: 320px;
-	margin: 0;
+	max-width: 1440px;
+	margin: auto;
 }
 .logosign {
 	display: flex;
@@ -758,13 +765,12 @@ footer ul li :hover  , footer ul li  :focus  {
 	}	
 	.fonctionnement-menuu-menu{
 		display: flex;
-		flex-wrap:nowrap;
-		white-space: nowrap;
+		flex-wrap: nowrap;
+		justify-content: center;
 	}	
 	li.fonctionnement-menuu-rest{
-		gap:5px;
 		margin: 0 0 20px 28px;
-		padding: 0 15px 0 0;
+		padding: 0 35px 0 0;
 	}
 	.fonctionnement p{
 		font-size: 14px;
@@ -846,10 +852,10 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 88%;
 	}
 	.cards:hover .card-text{
-		width: 70%;
+		width: 80%;
 	}
 	.main-container2-menuus .cards_prix{
-		margin-right: 15px;
+		margin-right: 5px;
 	}
 	.cards:hover .cards_text_prix{
 		width: 86%;
@@ -863,13 +869,13 @@ footer ul li :hover  , footer ul li  :focus  {
 	}
 	.main-container .fonctionnement-menuu-menu{
 		display: flex;
-		flex-wrap:nowrap;
+		flex-wrap: nowrap;
 		gap:0;
 		overflow: hidden;
 		/* si nécessaire, texte rogné et ... */
 		text-overflow: ellipsis;
 		/* empêche le retour à la ligne */
-		white-space: nowrap;
+		justify-content: center;	
 	}
 	.main-container .fonctionnement{
 		display: flex;
@@ -884,13 +890,12 @@ footer ul li :hover  , footer ul li  :focus  {
 		left: -15px;
 	}
 	.main-container li.fonctionnement-menuu-rest{
-		gap:15px;
-		padding-right:50px;
+		padding-right: 40px;
 		padding-left: 0;
-		margin-left: 20px;
+		gap: 10px;
 	}
 	.main-container #restaurants{
-		padding: 0 180px 0 180px;
+		padding: 0 180px 60px 180px;
 	}
 	.main-container .restaurants-cards{
 		display: flex;
@@ -960,19 +965,21 @@ footer ul li :hover  , footer ul li  :focus  {
 		margin: 0 200px 40px 200px;
 	}
 	.main-container2-menuus .card-text{
-		width: 93%;
+		width: 82%;
 	}
-	
+	.cards:hover .card_text{
+		width: 70%;
+	}
 	.cards:hover .cards_text_prix{
 		width: 86%;
 	}
 }
 @media screen and (min-width:1441px){
-	.nouveau{
-		margin-left: 92%;	
+	.main-container{
+		margin: auto;
 	}
-	.cards:hover .cards_text_prix{
-		width: 98%;
+	.main-container2{
+		margin: auto;
 	}
 }
 

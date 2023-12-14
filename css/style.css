@@ -722,6 +722,7 @@ footer ul li :hover  , footer ul li  :focus  {
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
 	transition: all 500ms ease 0ms;
+	justify-content: space-between;
 
 }
 .cards:hover .cards_check > .fa-check-circle {
@@ -831,11 +832,10 @@ footer ul li :hover  , footer ul li  :focus  {
 	}
 	
 	.main-container2-menuus .cards {
-		width: 75%;
+		margin: 0 60px 0 60px;	
 	}
-
 	.main-container2-menuus .menus-cards{
-		align-items: center;	
+		margin: 0 0 40px 0 ;
 	}
 	.main-container2-menuus h3{
 		align-self: flex-start;
@@ -845,13 +845,14 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 88%;
 	}
 	.cards:hover .card-text{
-		width: 80%;
+		width: 70%;
 	}
 	.main-container2-menuus .cards_prix{
 		margin-right: 15px;
 	}
 	.cards:hover .cards_text_prix{
-		width: 83%;
+		width: 86%;
+		justify-content: space-between;
 	}
 }
 @media screen and (min-width:1025px){
@@ -937,7 +938,7 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 60%;
 	}
 	.main-container2-menuus{
-		margin: 0 192px 0 193px;
+		margin: -30px 192px 0 193px;
 	}
 	.photos img{
 		height: 350px;
@@ -958,11 +959,14 @@ footer ul li :hover  , footer ul li  :focus  {
 	.main-container2-menuus .menus-cards {
 		margin: 0 200px 40px 200px;
 	}
+	.main-container2-menuus .card-text{
+		width: 93%;
+	}
 	.main-container2-menuus .cards_prix{
 		margin-right: 15px;
 	}
 	.cards:hover .cards_text_prix{
-		width: 87%;
+		width: 86%;
 	}
 }
 @media screen and (min-width:1441px){

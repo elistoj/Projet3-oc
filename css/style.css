@@ -974,13 +974,5 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 86%;
 	}
 }
-@media screen and (min-width:1441px){
-	.main-container{
-		margin: auto;
-	}
-	.main-container2{
-		margin: auto;
-	}
-}
 
 	

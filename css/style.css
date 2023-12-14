@@ -757,13 +757,11 @@ footer ul li :hover  , footer ul li  :focus  {
 		display: flex;
 		flex-wrap:nowrap;
 		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}	
 	li.fonctionnement-menuu-rest{
 		gap:5px;
 		margin: 0 0 20px 28px;
-		padding: 0 20px 0 0;
+		padding: 0 15px 0 0;
 	}
 	.fonctionnement p{
 		font-size: 14px;
@@ -839,7 +837,7 @@ footer ul li :hover  , footer ul li  :focus  {
 	}
 	.main-container2-menuus h3{
 		align-self: flex-start;
-		margin-left: 12%;
+		margin-left: 60px;
 	}	
 	.main-container2-menuus .card-text{
 		width: 88%;
@@ -962,9 +960,7 @@ footer ul li :hover  , footer ul li  :focus  {
 	.main-container2-menuus .card-text{
 		width: 93%;
 	}
-	.main-container2-menuus .cards_prix{
-		margin-right: 15px;
-	}
+	
 	.cards:hover .cards_text_prix{
 		width: 86%;
 	}

@@ -721,7 +721,7 @@ footer ul li :hover  , footer ul li  :focus  {
 	text-overflow: ellipsis;
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
-	transition: all 500ms ease 0ms;
+	transition: all 1s ease 0ms;
 	justify-content: space-between;
 
 }

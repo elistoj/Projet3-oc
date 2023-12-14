@@ -974,5 +974,10 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 86%;
 	}
 }
+@media screen and (min-width:1441px){
+	.animation_avant_chargement {
+		width: 50%;
+	}
+}
 
 	

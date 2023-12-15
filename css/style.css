@@ -433,9 +433,9 @@ li.fonctionnement-menuu-rest p {
 	color: #000000;
 }
 .card-content p {
+	color: #000;
 	display: flex;
 	justify-content: space-between;
-	align-content: space-between;
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 300;
@@ -660,9 +660,10 @@ footer ul li :hover  , footer ul li  :focus  {
 	/* empêche le retour à la ligne */
 	white-space: nowrap;
 }
-.main-container2-menuus .card.subtitle {
+.main-container2-menuus .card-subtitle {
 	font-size: 15.043px;
 	font-weight: 300;
+	color: #000;
 }
 .main-container2-menuus .cards {
 	border-radius: 15.043px;
@@ -723,6 +724,9 @@ footer ul li :hover  , footer ul li  :focus  {
 }
 .fa-check-circle{
 	font-size: 20px;
+}
+.cards:hover .card-text{
+	width: 68%;
 }
 .cards:hover .cards_text_prix{
 	width: 75%;
@@ -852,13 +856,13 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 88%;
 	}
 	.cards:hover .card-text{
-		width: 80%;
+		width: 70%;
 	}
 	.main-container2-menuus .cards_prix{
 		margin-right: 5px;
 	}
 	.cards:hover .cards_text_prix{
-		width: 86%;
+		width: 77%;
 		justify-content: space-between;
 	}
 }
@@ -968,10 +972,10 @@ footer ul li :hover  , footer ul li  :focus  {
 		width: 82%;
 	}
 	.cards:hover .card_text{
-		width: 70%;
+		width: 65%;
 	}
 	.cards:hover .cards_text_prix{
-		width: 86%;
+		width: 77%;
 	}
 }
 @media screen and (min-width:1441px){
